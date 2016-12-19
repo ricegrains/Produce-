@@ -1,0 +1,50 @@
+BODY
+{
+    background-color:	#e2ecff;
+    color:          	#000000;
+    font-family:    	"ËÎÌו";
+    font-weight:    	500;
+; font-size: 9pt
+}
+
+A
+{    
+    color:          	#000000;
+	text-decoration:	none;
+}
+
+A:hover
+{    
+	color:				#0066CC;
+}
+
+.zero
+{
+    font-size:      	11pt /*medium*/;
+    padding-top:    	8;
+    line-height:    	14pt;
+}
+
+.frist
+{
+    font-size:      	11pt /*small*/;
+    padding:        	2;
+    margin-left: 		25;
+}
+
+.second
+{
+    font-size:      	10pt /*x-small*/;
+    color:          	#FFFFFF;  
+    display: 			none;
+    margin-left: 		30;   
+}
+
+.LI
+{
+    line-height:    	14pt;
+}
+.OUTDENT 
+{
+	margin-left:		-16;
+}

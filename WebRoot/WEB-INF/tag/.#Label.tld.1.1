@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	  <tlib-version>1.1</tlib-version>
+	  <jsp-version>2.1</jsp-version>
+	  <short-name>me</short-name>
+	  <uri>/MySelectTag</uri>
+	  <tag>
+	      <name>my</name>
+	      <tag-class>com.ht.Tagsupport.MySelectTag</tag-class>
+	      <body-content>JSP</body-content>
+	      <attribute>
+	      	 <name>tablename</name>
+	      	 <required>required</required>
+	      </attribute>
+	      <attribute>
+	      	 <name>columnname</name>
+	      	 <required>required</required>
+	      </attribute>
+	      <attribute>
+	      	 <name>id</name>
+	      	 <required>required</required>
+	      </attribute>
+	  </tag>
+	  
+	   <tag>
+      <name>select</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+    
+    <tag>
+      <name>select2</name>
+      <tag-class>com.ht.Tagsupport.orgTypeTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+    
+     <tag>
+      <name>select3</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag2</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+    
+     <tag>
+      <name>select4</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag3</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+	  
+</taglib>        

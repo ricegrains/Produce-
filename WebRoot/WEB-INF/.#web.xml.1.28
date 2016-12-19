@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+        <servlet-name>ServletPage</servlet-name>
+        <servlet-class>com.Servlet.ServletPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>ServletPage</servlet-name>
+        <url-pattern>/ServletPage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+        <servlet-name>Check</servlet-name>
+        <servlet-class>com.Servlet.LoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>Check</servlet-name>
+        <url-pattern>/LoginCheck</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>Password</servlet-name>
+        <servlet-class>com.yuservlet.Password</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>Password</servlet-name>
+        <url-pattern>/Password</url-pattern>
+  </servlet-mapping>
+  
+
+     <filter>
+        <filter-name>FilterHandle</filter-name>
+        <filter-class>com.Servlet.FilterHandle</filter-class>
+        <init-param>
+        	<param-name>encoding</param-name>
+        	<param-value>GBK</param-value>
+        </init-param>
+   </filter>
+   <filter-mapping>
+        <filter-name>FilterHandle</filter-name>
+        <url-pattern>/*</url-pattern>
+   </filter-mapping>
+
+
+  <!-- 开始余 -->
+ <servlet>
+        <servlet-name>MainEmployee</servlet-name>
+        <servlet-class>com.yuservlet.MainEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>MainEmployee</servlet-name>
+        <url-pattern>/MainEmployee</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+        <servlet-name>AddEmployee</servlet-name>
+        <servlet-class>com.yuservlet.AddEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>AddEmployee</servlet-name>
+        <url-pattern>/AddEmployee</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <servlet-class>com.yuservlet.UpdateEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <url-pattern>/UpdateEmployee</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>DeleteEmployee</servlet-name>
+        <servlet-class>com.yuservlet.DeleteEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>DeleteEmployee</servlet-name>
+        <url-pattern>/DeleteEmployee</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+        <servlet-name>MainModule</servlet-name>
+        <servlet-class>com.yuservlet.MainModule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>MainModule</servlet-name>
+        <url-pattern>/MainModule</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>AddModule</servlet-name>
+        <servlet-class>com.yuservlet.AddModule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>AddModule</servlet-name>
+        <url-pattern>/AddModule</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>UpdateModule</servlet-name>
+        <servlet-class>com.yuservlet.UpdateModule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>UpdateModule</servlet-name>
+        <url-pattern>/UpdateModule</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>DeleteModule</servlet-name>
+        <servlet-class>com.yuservlet.DeleteModule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>DeleteModule</servlet-name>
+        <url-pattern>/DeleteModule</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>AddModuleAuthor</servlet-name>
+        <servlet-class>com.yuservlet.AddModuleAuthor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>AddModuleAuthor</servlet-name>
+        <url-pattern>/AddModuleAuthor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>DelectModuleAuthor</servlet-name>
+        <servlet-class>com.yuservlet.DelectModuleAuthor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>DelectModuleAuthor</servlet-name>
+        <url-pattern>/DelectModuleAuthor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>MainModuleAuthor</servlet-name>
+        <servlet-class>com.yuservlet.MainModuleAuthor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>MainModuleAuthor</servlet-name>
+        <url-pattern>/MainModuleAuthor</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+        <servlet-name>UpdateModuleAuthor</servlet-name>
+        <servlet-class>com.yuservlet.UpdateModuleAuthor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>UpdateModuleAuthor</servlet-name>
+        <url-pattern>/UpdateModuleAuthor</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>ServletDispose</servlet-name>
+        <servlet-class>com.yuservlet.ServletDispose</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>ServletDispose</servlet-name>
+        <url-pattern>/ServletDispose</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>MainObjects</servlet-name>
+        <servlet-class>com.yuservlet.MainObjects</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>MainObjects</servlet-name>
+        <url-pattern>/MainObjects</url-pattern>
+  </servlet-mapping>
+  
+    
+  <servlet>
+        <servlet-name>UpdateObjects</servlet-name>
+        <servlet-class>com.yuservlet.UpdateObjects</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>UpdateObjects</servlet-name>
+        <url-pattern>/UpdateObjects</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 结束余 -->
+
+<!-- 养殖管理（信息） -->
+
+   <servlet>
+        <servlet-name>BreedServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedServlet</servlet-name>
+        <url-pattern>/BreedServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>BreedAddServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedAddServlet</servlet-name>
+        <url-pattern>/BreedAddServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>BreedUpdateServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedUpdateServlet</servlet-name>
+        <url-pattern>/BreedUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>BreedDeleteServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedDeleteServlet</servlet-name>
+        <url-pattern>/BreedDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+ 
+ <!-- 循环养殖管理（信息） -->
+
+   <servlet>
+        <servlet-name>BreedLoopServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedLoopServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedLoopServlet</servlet-name>
+        <url-pattern>/BreedLoopServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>BreedLoopAddServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedLoopAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedLoopAddServlet</servlet-name>
+        <url-pattern>/BreedLoopAddServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>BreedLoopUpdateServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedLoopUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedLoopUpdateServlet</servlet-name>
+        <url-pattern>/BreedLoopUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>BreedLoopDeleteServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.BreedLoopDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>BreedLoopDeleteServlet</servlet-name>
+        <url-pattern>/BreedLoopDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+<!-- 投放鱼苗 -->
+  <servlet>
+        <servlet-name>PutFryServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.PutFryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>PutFryServlet</servlet-name>
+        <url-pattern>/PutFryServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>PutFryAddServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.PutFryAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>PutFryAddServlet</servlet-name>
+        <url-pattern>/PutFryAddServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+        <servlet-name>PutFryUpdateServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.PutFryUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>PutFryUpdateServlet</servlet-name>
+        <url-pattern>/PutFryUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+        <servlet-name>PutFryDeleteServlet</servlet-name>
+        <servlet-class>com.ht.Servlet.PutFryDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>PutFryDeleteServlet</servlet-name>
+        <url-pattern>/PutFryDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <jsp-config>
+		<taglib>
+			<taglib-uri>/tag</taglib-uri>
+			<taglib-location>/WEB-INF/tag/Label.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+<!-- 报表信息表 -->
+ <servlet>
+      <servlet-name>uploadingFileServlet</servlet-name>
+      <servlet-class>com.Reports.uploadingFileServlet</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>uploadingFileServlet</servlet-name>
+      <url-pattern>/uploadingFileServlet</url-pattern>
+  </servlet-mapping>
+ <!-- 报警信息 --> 
+   <servlet>
+      <servlet-name>addAlarmServlet</servlet-name>
+      <servlet-class>com.Alarm.addAlarmServlet</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>addAlarmServlet</servlet-name>
+      <url-pattern>/addAlarmServlet</url-pattern>
+  </servlet-mapping>
+<!-- 追溯码表 -->
+ <servlet>
+      <servlet-name>addTraceNumberServlet</servlet-name>
+      <servlet-class>com.TraceNumber.addTraceNumberServlet</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>addTraceNumberServlet</servlet-name>
+      <url-pattern>/addTraceNumberServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 追溯表 -->
+ <servlet>
+      <servlet-name>addTranceServlet</servlet-name>
+      <servlet-class>com.Trace.addTranceServlet</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>addTranceServlet</servlet-name>
+      <url-pattern>/addTranceServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 向农资市场表插入数据 -->
+ <servlet>
+      <servlet-name>addMarketServlet</servlet-name>
+      <servlet-class>com.Market.addMarketServlet</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>addMarketServlet</servlet-name>
+      <url-pattern>/addMarketServlet</url-pattern>
+  </servlet-mapping>
+   <!-- 查询农资市场表的所有数据 -->
+ <servlet>
+      <servlet-name>selectAllMarket</servlet-name>
+      <servlet-class>com.Market.selectAllMarket</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>selectAllMarket</servlet-name>
+      <url-pattern>/selectAllMarket</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

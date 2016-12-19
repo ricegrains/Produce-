@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	  <tlib-version>1.1</tlib-version>
+	  <jsp-version>2.1</jsp-version>
+	  <short-name>me</short-name>
+	  <uri>/MySelectTag</uri>
+	  
+	  <tag>
+	      <name>soil</name>
+	      <tag-class>com.ht.Tagsupport.MySelectTag</tag-class>
+	      <body-content>JSP</body-content>
+	      <attribute>
+	      	 <name>tablename</name>
+	      	 <required>required</required>
+	      </attribute>
+	      <attribute>
+	      	 <name>columnname</name>
+	      	 <required>required</required>
+	      </attribute>
+	      <attribute>
+	      	 <name>id</name>
+	      	 <required>required</required>
+	      </attribute>
+	  </tag>
+	  
+	  
+	   <tag>
+	      <name>breed</name>
+	      <tag-class>com.ht.Tagsupport.YangZhiTag</tag-class>
+	      <body-content>JSP</body-content>
+	      <attribute>
+	      	 <name>table</name>
+	      	 <required>required</required>
+	      </attribute>
+	      <attribute>
+	      	 <name>id</name>
+	      	 <required>required</required>
+	      </attribute>
+	      <attribute>
+	      	 <name>name</name>
+	      	 <required>required</required>
+	      </attribute>
+	  </tag>
+	  
+	  
+	  <!--报表信息表的接收部门下拉框  -->
+	   <tag>
+      <name>select</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--报表信息表的报表类型下拉框  -->
+    <tag>
+      <name>select2</name>
+      <tag-class>com.ht.Tagsupport.orgTypeTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--报表信息表的发送部门下拉框  -->
+     <tag>
+      <name>select3</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag2</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--报警信息表的投诉组织下拉框  -->
+     <tag>
+      <name>select4</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag3</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+	  <!--报警信息表的投诉对象下拉框  -->
+	   <tag>
+      <name>select5</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag4</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+      <!--报警信息表的生产组织下拉框  -->
+	   <tag>
+      <name>select16</name>
+      <tag-class>com.ht.Tagsupport.organizationsTag16</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--追溯表的追溯码ID  -->
+	   <tag>
+      <name>select6</name>
+      <tag-class>com.ht.Tagsupport.tranceTag5</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--追溯表的生产组织   -->
+	   <tag>
+      <name>select7</name>
+      <tag-class>com.ht.Tagsupport.produceSellTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--追溯表的客户   -->
+	   <tag>
+      <name>select8</name>
+      <tag-class>com.ht.Tagsupport.produceSellTag2</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--追溯表的承包户编号 -->
+	   <tag>
+      <name>select9</name>
+      <tag-class>com.ht.Tagsupport.produceSellTag3</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--农产品表的名称 -->
+	   <tag>
+      <name>select10</name>
+      <tag-class>com.ht.Tagsupport.objectsTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--投入品采购表 的生产组织的下拉框-->
+	   <tag>
+      <name>select11</name>
+      <tag-class>com.ht.Tagsupport.inputPurchaseTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+      <!--基础数据细分表的ID下拉框-->
+	   <tag>
+      <name>select12</name>
+      <tag-class>com.ht.Tagsupport.subtypeSetTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--费用结算的费用结算编号下拉框-->
+	   <tag>
+      <name>select13</name>
+      <tag-class>com.ht.Tagsupport.balanceTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+       <!--农产品销售表的规格下拉框-->
+	   <tag>
+      <name>select14</name>
+      <tag-class>com.ht.Tagsupport.produceSellTag4</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--承包合同表的合同编号下拉框-->
+	   <tag>
+      <name>select15</name>
+      <tag-class>com.ht.Tagsupport.contractTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+     <!--下拉框-->
+	   <tag>
+      <name>select18</name>
+      <tag-class>com.ht.Tagsupport.orTag</tag-class>
+      <body-content>JSP</body-content>
+      <attribute>
+      	 <name>table</name>
+      	 <required>required</required>
+      </attribute>
+    </tag>
+</taglib>        
